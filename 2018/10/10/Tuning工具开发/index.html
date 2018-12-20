@@ -1,0 +1,499 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    这是一片荒野
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="荒野">
+    
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">WILDERNESS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/project/" title="项目">
+		                项目
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/essay/" title="随笔">
+		                随笔
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/study/" title="学习">
+		                学习
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="http://github.com/JustHuangye" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="envelope" href="mailto:lcmail1001@163.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-envelope"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="wechat" href="http://m.qpic.cn/psb?/V125eqhn4SqTbT/qiLECHXPszb44SsEPW8HQDkdQ*SlCPnCDrTTj5sqlQs!/b/dLYAAAAAAAAA&bo=rgGuAQAAAAARBzA!&rf=viewer_4" target="_blank" rel="noopener">
+                            <i class="icon fa fa-wechat"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(http://m.qpic.cn/psb?/V125eqhn2Y8tx7/LxodkGqbCj2G8d*QJ1ZqkeXUIbgtLQboufN3Ins5Dh0!/b/dFIBAAAAAAAA&amp;bo=sAQgA7AEIAMRCT4!&amp;rf=viewer_4);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>Tuning 工具开发</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>这个小项目贯穿了整个实习，在实习过程中，收获到了很多东西，学会了做饭，学会了一个人生活，接触到了一群很好的人。<br>在项目中，不仅仅学到怎么使用python，也不仅仅是得到一个项目突出贡献奖（1500块钱，美滋滋），更多的是自己思维的转变，感受到了团队的协作……<br>接下来就简单介绍一下项目中学到的一些小知识。</p>
+<h2 id="依赖模块"><a href="#依赖模块" class="headerlink" title="依赖模块"></a>依赖模块</h2><ol>
+<li>pyuic5 (ui-&gt;py)</li>
+<li>python depend<pre class=" language-python"><code class="language-python"> <span class="token keyword">import</span> sys
+ <span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+ <span class="token keyword">import</span> cv2
+ <span class="token keyword">import</span> math
+ <span class="token keyword">import</span> os
+ <span class="token keyword">import</span> time
+ <span class="token keyword">import</span> xlwings <span class="token keyword">as</span> xw                           <span class="token comment" spellcheck="true">#处理Excel文件</span>
+ <span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+ <span class="token keyword">from</span> openpyxl<span class="token punctuation">.</span>workbook <span class="token keyword">import</span> Workbook         <span class="token comment" spellcheck="true">#处理Excel文件</span>
+ <span class="token keyword">from</span> openpyxl <span class="token keyword">import</span> load_workbook             <span class="token comment" spellcheck="true">#处理Excel文件</span>
+ <span class="token keyword">from</span> PyQt5 <span class="token keyword">import</span> QtCore<span class="token punctuation">,</span> QtGui<span class="token punctuation">,</span> QtWidgets<span class="token punctuation">,</span>Qt
+ <span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> <span class="token operator">*</span>
+ <span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtCore <span class="token keyword">import</span> <span class="token operator">*</span>
+ <span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtCore <span class="token keyword">import</span> QTimer
+ <span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtCore <span class="token keyword">import</span> QRect
+ <span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtGui <span class="token keyword">import</span> QColor
+ <span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtGui <span class="token keyword">import</span> QPixmap
+ <span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtGui <span class="token keyword">import</span> QPalette
+ <span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtGui <span class="token keyword">import</span> QIcon
+ <span class="token keyword">from</span> numba <span class="token keyword">import</span> jit                         <span class="token comment" spellcheck="true">#在运行时将Python代码编译为本地机器指令，实现加速</span>
+</code></pre>
+</li>
+<li>pyinstaller(py-&gt;exe)</li>
+</ol>
+<h2 id="设计交互界面"><a href="#设计交互界面" class="headerlink" title="设计交互界面"></a>设计交互界面</h2><ol>
+<li><p>在QtDesigner中设计界面，主要用到的部件：menubar(菜单栏)、Label(显示图片、文字等)、comboBox(下拉框)、LineEdit(输入框)、Button······</p>
+</li>
+<li><p>在QtDesigner中可以使用Widget使输入部分的部件表格化；</p>
+</li>
+<li><p>QtDesigner生成.ui文件，在PowerShell中键入命令转py文件；</p>
+<blockquote>
+<p>pyuic5 -o output.py input.ui</p>
+</blockquote>
+</li>
+<li><p>在py文件中自动生成setupUi(部件初始化)以及retranslateUi函数(setText，setTitle);</p>
+<h4 id="设置界面背景以及图标"><a href="#设置界面背景以及图标" class="headerlink" title="设置界面背景以及图标"></a>设置界面背景以及图标</h4><pre class=" language-python"><code class="language-python"> BackG <span class="token operator">=</span> QtGui<span class="token punctuation">.</span>QPalette<span class="token punctuation">(</span><span class="token punctuation">)</span>                    <span class="token comment" spellcheck="true">#设置界面背景</span>
+ BackG<span class="token punctuation">.</span>setBrush<span class="token punctuation">(</span>self<span class="token punctuation">.</span>backgroundRole<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>QtGui<span class="token punctuation">.</span>QBrush<span class="token punctuation">(</span>QtGui<span class="token punctuation">.</span>QPixmap<span class="token punctuation">(</span><span class="token string">'BGI.jpg'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+ self<span class="token punctuation">.</span>setPalette<span class="token punctuation">(</span>BackG<span class="token punctuation">)</span>
+ self<span class="token punctuation">.</span>setWindowIcon<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'ico.png'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>        <span class="token comment" spellcheck="true">#设置界面图标</span>
+</code></pre>
+<h4 id="显示图片区域"><a href="#显示图片区域" class="headerlink" title="显示图片区域"></a>显示图片区域</h4><pre class=" language-python"><code class="language-python"> self<span class="token punctuation">.</span>label <span class="token operator">=</span> QtWidgets<span class="token punctuation">.</span>QLabel<span class="token punctuation">(</span>self<span class="token punctuation">.</span>centralwidget<span class="token punctuation">)</span>
+ self<span class="token punctuation">.</span>label<span class="token punctuation">.</span>setGeometry<span class="token punctuation">(</span>QtCore<span class="token punctuation">.</span>QRect<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">640</span><span class="token punctuation">,</span> <span class="token number">480</span><span class="token punctuation">)</span><span class="token punctuation">)</span>             <span class="token comment" spellcheck="true">#Label在界面中的位置</span>
+ self<span class="token punctuation">.</span>label<span class="token punctuation">.</span>setObjectName<span class="token punctuation">(</span><span class="token string">"label"</span><span class="token punctuation">)</span>
+ self<span class="token punctuation">.</span>label<span class="token punctuation">.</span>setAutoFillBackground<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+ self<span class="token punctuation">.</span>label<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span><span class="token string">'border:1px solid rgb(100,100,100);'</span><span class="token punctuation">)</span>     <span class="token comment" spellcheck="true">#border[border width] [种类] [颜色]，border-radius: 15%(弧度框)</span>
+ self<span class="token punctuation">.</span>label<span class="token punctuation">.</span>setMouseTracking<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+</code></pre>
+<h4 id="各种部件设置（button为例）"><a href="#各种部件设置（button为例）" class="headerlink" title="各种部件设置（button为例）"></a>各种部件设置（button为例）</h4><pre class=" language-python"><code class="language-python"> self<span class="token punctuation">.</span>Button <span class="token operator">=</span> QtWidgets<span class="token punctuation">.</span>QPushButton<span class="token punctuation">(</span>MainWindow<span class="token punctuation">)</span>                                                 <span class="token comment" spellcheck="true">#button为PushButton</span>
+ <span class="token comment" spellcheck="true"># self.Button.setStyleSheet('height:120px;')                                                    #设置button大小</span>
+ self<span class="token punctuation">.</span>Button<span class="token punctuation">.</span>setObjectName<span class="token punctuation">(</span><span class="token string">"pushButton"</span><span class="token punctuation">)</span>
+ self<span class="token punctuation">.</span>Button<span class="token punctuation">.</span>clicked<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>buttonEvent<span class="token punctuation">)</span>                                                   <span class="token comment" spellcheck="true">#连接到槽</span>
+ self<span class="token punctuation">.</span>Button<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span><span class="token string">"background-color:#dff0d8;color:#468847;border-color: #d6e9c6;"</span><span class="token punctuation">)</span>      #button个性化
+ self<span class="token punctuation">.</span>Button<span class="token punctuation">.</span>setGeometry<span class="token punctuation">(</span><span class="token number">700</span><span class="token punctuation">,</span><span class="token number">250</span><span class="token punctuation">,</span><span class="token number">80</span><span class="token punctuation">,</span><span class="token number">35</span><span class="token punctuation">)</span>                                                          <span class="token comment" spellcheck="true">#button显示位置</span>
+</code></pre>
+</li>
+<li><p>构造函数显示界面。</p>
+<pre class=" language-python"><code class="language-python"> <span class="token comment" spellcheck="true"># Ui_MainWindow类中</span>
+ <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+     super<span class="token punctuation">(</span>Ui_MainWindow<span class="token punctuation">,</span>self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>                     <span class="token comment" spellcheck="true">#调用父类</span>
+     self<span class="token punctuation">.</span>setupUi<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+     self<span class="token punctuation">.</span>retranslateUi<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+     timer <span class="token operator">=</span> QTimer<span class="token punctuation">(</span>self<span class="token punctuation">)</span>                                     <span class="token comment" spellcheck="true">#定时器的使用</span>
+     timer<span class="token punctuation">.</span>timeout<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>interval<span class="token punctuation">)</span>
+     timer<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span>
+     self<span class="token punctuation">.</span>accelerate <span class="token operator">=</span> accelerate<span class="token punctuation">(</span><span class="token punctuation">)</span>                           <span class="token comment" spellcheck="true">#加速</span>
+ <span class="token comment" spellcheck="true"># 结尾    </span>
+ <span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+     app <span class="token operator">=</span> QtWidgets<span class="token punctuation">.</span>QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span>
+     ui <span class="token operator">=</span> Ui_MainWindow<span class="token punctuation">(</span><span class="token punctuation">)</span>                                     <span class="token comment" spellcheck="true">#实例化对象</span>
+     ui<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+     sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="功能开发"><a href="#功能开发" class="headerlink" title="功能开发"></a>功能开发</h2><ol>
+<li><p>构造子界面（用于输入图片信息）</p>
+<pre class=" language-python"><code class="language-python"> <span class="token keyword">class</span> <span class="token class-name">InputWindow</span><span class="token punctuation">(</span>QWidget<span class="token punctuation">)</span><span class="token punctuation">:</span>
+     <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>parent<span class="token punctuation">)</span><span class="token punctuation">:</span>
+         super<span class="token punctuation">(</span>InputWindow<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+         self<span class="token punctuation">.</span>setupUi<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+         self<span class="token punctuation">.</span>retranslateUi<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+         self<span class="token punctuation">.</span>parent <span class="token operator">=</span> parent                                     <span class="token comment" spellcheck="true">#用于连接到父界面</span>
+
+     <span class="token keyword">def</span> <span class="token function">buttonEvent</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+         self<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>img_width <span class="token operator">=</span> int<span class="token punctuation">(</span>self<span class="token punctuation">.</span>Width<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>           <span class="token comment" spellcheck="true">#输入参数到父类中</span>
+         self<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>img_height <span class="token operator">=</span> int<span class="token punctuation">(</span>self<span class="token punctuation">.</span>Height<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+         self<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>img_format <span class="token operator">=</span> self<span class="token punctuation">.</span>comboBox<span class="token punctuation">.</span>currentText<span class="token punctuation">(</span><span class="token punctuation">)</span>
+         self<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>pxm2 <span class="token operator">=</span> <span class="token boolean">True</span>                                  
+         self<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h4 id="主界面调用"><a href="#主界面调用" class="headerlink" title="主界面调用"></a>主界面调用</h4><blockquote>
+<p>self.Input = InputWindow(self)</p>
+</blockquote>
+</li>
+<li><p>打开文件夹</p>
+<pre class=" language-python"><code class="language-python"> <span class="token keyword">def</span> <span class="token function">openfile</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+     <span class="token comment" spellcheck="true"># openfile_name = QFileDialog.getOpenFileName(self,'选择文件','','All files(*.*)')    #调用windows资源管理器，选取单个文件</span>
+     <span class="token comment" spellcheck="true"># openfile_name = QFileDialog.getOpenFileNames(self,'选择文件','','All files(*.*)')   #调用windows资源管理器，选取多个文件</span>
+     self<span class="token punctuation">.</span>__filePath <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+     openfile_name <span class="token operator">=</span> QFileDialog<span class="token punctuation">.</span>getExistingDirectory<span class="token punctuation">(</span>self<span class="token punctuation">,</span><span class="token string">'选择文件夹'</span><span class="token punctuation">)</span>                   <span class="token comment" spellcheck="true">#调用windows资源管理器，选取文件夹</span>
+     <span class="token keyword">if</span> <span class="token operator">not</span> openfile_name<span class="token punctuation">:</span>
+         <span class="token keyword">pass</span>
+     <span class="token keyword">else</span><span class="token punctuation">:</span>
+         path <span class="token operator">=</span> os<span class="token punctuation">.</span>listdir<span class="token punctuation">(</span>openfile_name<span class="token punctuation">)</span>                                                 <span class="token comment" spellcheck="true">#获取文件夹中所有文件</span>
+         <span class="token keyword">for</span> i <span class="token keyword">in</span> path<span class="token punctuation">:</span>
+             self<span class="token punctuation">.</span>__filePath<span class="token punctuation">.</span>append<span class="token punctuation">(</span>openfile_name<span class="token operator">+</span><span class="token string">'/'</span><span class="token operator">+</span>i<span class="token punctuation">)</span>
+         self<span class="token punctuation">.</span>check_filename<span class="token punctuation">(</span>self<span class="token punctuation">.</span>__filePath<span class="token punctuation">)</span>                                          
+     <span class="token keyword">if</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>filestype <span class="token operator">==</span> <span class="token string">'raw'</span> <span class="token operator">or</span> self<span class="token punctuation">.</span>filestype <span class="token operator">==</span> <span class="token string">'yuv'</span> <span class="token punctuation">)</span><span class="token punctuation">:</span>
+         self<span class="token punctuation">.</span>Input<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>                                                                <span class="token comment" spellcheck="true">#显示子界面</span>
+     <span class="token keyword">else</span><span class="token punctuation">:</span>
+         self<span class="token punctuation">.</span>showNow <span class="token operator">=</span> <span class="token boolean">True</span>
+</code></pre>
+</li>
+<li><p>定时器的使用（主要用于设置提示文字，以及阻塞进行）</p>
+<pre class=" language-python"><code class="language-python"> <span class="token keyword">def</span> <span class="token function">interval</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+     <span class="token keyword">if</span> self<span class="token punctuation">.</span>dosth <span class="token punctuation">:</span>                 <span class="token operator">//</span>功能处理数据时阻塞设置提示文字
+         self<span class="token punctuation">.</span>function<span class="token punctuation">(</span><span class="token punctuation">)</span>
+     <span class="token keyword">if</span> self<span class="token punctuation">.</span>showNow<span class="token punctuation">:</span>                <span class="token operator">//</span>显示图片时阻塞设置提示问题
+         self<span class="token punctuation">.</span>showImg<span class="token punctuation">(</span><span class="token punctuation">)</span>
+     <span class="token keyword">if</span> self<span class="token punctuation">.</span>pxm2<span class="token punctuation">:</span>                   <span class="token operator">//</span>输入数据时阻塞，输入结束显示图片
+         self<span class="token punctuation">.</span>showNow <span class="token operator">=</span> <span class="token boolean">True</span>
+</code></pre>
+</li>
+<li><p>保存路径</p>
+<pre class=" language-python"><code class="language-python"> <span class="token keyword">def</span> <span class="token function">getpath</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+     pwd <span class="token operator">=</span> os<span class="token punctuation">.</span>getcwd<span class="token punctuation">(</span><span class="token punctuation">)</span>                                                                  <span class="token comment" spellcheck="true">#获得当前路径</span>
+     fatherpath <span class="token operator">=</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>abspath<span class="token punctuation">(</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>dirname<span class="token punctuation">(</span>pwd<span class="token punctuation">)</span><span class="token operator">+</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>sep<span class="token operator">+</span><span class="token string">"."</span><span class="token punctuation">)</span>                  <span class="token comment" spellcheck="true">#获得父路径</span>
+     self<span class="token punctuation">.</span>savepath <span class="token operator">=</span> fatherpath <span class="token operator">+</span> <span class="token string">'\\Results\\'</span>
+</code></pre>
+</li>
+<li><p>判断文件类型</p>
+<pre class=" language-python"><code class="language-python"> <span class="token keyword">def</span> <span class="token function">check_filename</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>array<span class="token punctuation">)</span><span class="token punctuation">:</span>
+     index <span class="token operator">=</span> <span class="token number">0</span>
+     num <span class="token operator">=</span> len<span class="token punctuation">(</span>array<span class="token punctuation">)</span>
+     <span class="token keyword">for</span> i <span class="token keyword">in</span> array<span class="token punctuation">:</span>
+         <span class="token keyword">if</span> str<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>endswith<span class="token punctuation">(</span><span class="token string">'jpg'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+             index <span class="token operator">+=</span><span class="token number">1</span>
+             <span class="token keyword">if</span> index <span class="token operator">==</span> num<span class="token punctuation">:</span>
+                 self<span class="token punctuation">.</span>filestype <span class="token operator">=</span> <span class="token string">'jpg'</span>
+         <span class="token keyword">elif</span> str<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>endswith<span class="token punctuation">(</span><span class="token string">'yuv'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+             index <span class="token operator">+=</span><span class="token number">1</span>
+             <span class="token keyword">if</span> index <span class="token operator">==</span> num<span class="token punctuation">:</span>
+                 self<span class="token punctuation">.</span>filestype <span class="token operator">=</span> <span class="token string">'yuv'</span>
+         <span class="token keyword">elif</span> str<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>endswith<span class="token punctuation">(</span><span class="token string">'raw'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+             index <span class="token operator">+=</span><span class="token number">1</span>
+             <span class="token keyword">if</span> index <span class="token operator">==</span> num<span class="token punctuation">:</span>
+                 self<span class="token punctuation">.</span>filestype <span class="token operator">=</span> <span class="token string">'raw'</span>
+         <span class="token keyword">elif</span> str<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>endswith<span class="token punctuation">(</span><span class="token string">'csv'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+             self<span class="token punctuation">.</span>filestype <span class="token operator">=</span> <span class="token string">'csv'</span>
+         <span class="token keyword">else</span><span class="token punctuation">:</span>
+             <span class="token keyword">pass</span>
+</code></pre>
+</li>
+<li><p>显示图片</p>
+<pre class=" language-python"><code class="language-python"> img <span class="token operator">=</span> self<span class="token punctuation">.</span>accelerate<span class="token punctuation">.</span>showRaw<span class="token punctuation">(</span>self<span class="token punctuation">.</span>__filePath<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>img_width<span class="token punctuation">,</span>self<span class="token punctuation">.</span>img_height<span class="token punctuation">,</span>self<span class="token punctuation">.</span>img_format<span class="token punctuation">)</span>
+ raw <span class="token operator">=</span> QtGui<span class="token punctuation">.</span>QImage<span class="token punctuation">(</span>img<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">,</span>img<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> img<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>img<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">,</span> QtGui<span class="token punctuation">.</span>QImage<span class="token punctuation">.</span>Format_RGB888<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#将数组转换成QImage类型</span>
+ pix <span class="token operator">=</span> QtGui<span class="token punctuation">.</span>QPixmap<span class="token punctuation">.</span>fromImage<span class="token punctuation">(</span>raw<span class="token punctuation">)</span>                                                                 <span class="token comment" spellcheck="true">#将Image转换成QPixmap类型</span>
+ pix <span class="token operator">=</span> QtGui<span class="token punctuation">.</span>QPixmap<span class="token punctuation">(</span>pix<span class="token punctuation">)</span><span class="token punctuation">.</span>scaled<span class="token punctuation">(</span>self<span class="token punctuation">.</span>label<span class="token punctuation">.</span>width<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>label<span class="token punctuation">.</span>height<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>aspectRatioMode<span class="token operator">=</span>Qt<span class="token punctuation">.</span>KeepAspectRatio<span class="token punctuation">,</span>transformMode <span class="token operator">=</span> Qt<span class="token punctuation">.</span>SmoothTransformation<span class="token punctuation">)</span>                        <span class="token comment" spellcheck="true">#按比例缩放，transformMode = Qt.SmoothTransformation使图片不失真</span>
+ self<span class="token punctuation">.</span>label<span class="token punctuation">.</span>setPixmap<span class="token punctuation">(</span>pix<span class="token punctuation">)</span>                                                                          <span class="token comment" spellcheck="true">#图片贴到label上</span>
+</code></pre>
+</li>
+<li><p>各功能的选取</p>
+<pre class=" language-python"><code class="language-python"> <span class="token keyword">def</span> <span class="token function">functionname</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+     <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+     <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+     self<span class="token punctuation">.</span>which <span class="token operator">=</span> <span class="token string">"functionname"</span>
+</code></pre>
+</li>
+<li><p>功能的实现</p>
+<pre class=" language-python"><code class="language-python"> <span class="token keyword">def</span> <span class="token function">function</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+     <span class="token keyword">if</span> self<span class="token punctuation">.</span>which <span class="token operator">==</span> <span class="token string">"functionname"</span> ：
+         <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+         <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+     <span class="token keyword">elif</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">:</span>
+         <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+         <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+</code></pre>
+</li>
+<li><p>解析图片数据（YUV以及RAW图需要加速）</p>
+<h4 id="RAW10数据解析"><a href="#RAW10数据解析" class="headerlink" title="RAW10数据解析"></a>RAW10数据解析</h4><pre class=" language-python"><code class="language-python"> rawRGB <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">(</span>img_height<span class="token punctuation">,</span> img_width<span class="token punctuation">)</span><span class="token punctuation">)</span>
+ imgData <span class="token operator">=</span> np<span class="token punctuation">.</span>fromfile<span class="token punctuation">(</span>srcfile<span class="token punctuation">,</span> dtype<span class="token operator">=</span><span class="token string">'uint8'</span><span class="token punctuation">)</span>                  <span class="token comment" spellcheck="true">#按8位读取</span>
+ img <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">(</span>img_height<span class="token punctuation">,</span> img_width<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span>np<span class="token punctuation">.</span>uint8<span class="token punctuation">)</span>     <span class="token comment" spellcheck="true">#定义三通道数组</span>
+ index <span class="token operator">=</span> <span class="token number">0</span>
+ <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> img_height<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 忽略第5个字节</span>
+     <span class="token keyword">for</span> j <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> img_width<span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+         rawRGB<span class="token punctuation">[</span>i<span class="token punctuation">,</span> j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>imgData<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">)</span>
+         rawRGB<span class="token punctuation">[</span>i<span class="token punctuation">,</span> j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>imgData<span class="token punctuation">[</span>index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+         rawRGB<span class="token punctuation">[</span>i<span class="token punctuation">,</span> j <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>imgData<span class="token punctuation">[</span>index <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+         rawRGB<span class="token punctuation">[</span>i<span class="token punctuation">,</span> j <span class="token operator">+</span> <span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>imgData<span class="token punctuation">[</span>index <span class="token operator">+</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+         index <span class="token operator">+=</span> <span class="token number">5</span>
+ <span class="token comment" spellcheck="true"># for i in range(img_height):</span>
+ <span class="token comment" spellcheck="true">#     for j in range(0, img_width, 4):</span>
+ <span class="token comment" spellcheck="true">#         rawRGB[i, j] = ((imgData[index] &lt;&lt; 2) | (imgData[index + 4] &amp; 0x03))</span>
+ <span class="token comment" spellcheck="true">#         rawRGB[i, j + 1] = ((imgData[index + 1] &lt;&lt; 2) | (imgData[index + 4] &amp; 0x0c) >> 2)</span>
+ <span class="token comment" spellcheck="true">#         rawRGB[i, j + 2] = ((imgData[index + 2] &lt;&lt; 2) | (imgData[index + 4] &amp; 0x30) >> 4)</span>
+ <span class="token comment" spellcheck="true">#         rawRGB[i, j + 3] = ((imgData[index + 3] &lt;&lt; 2) | (imgData[index + 4] &amp; 0xc0) >> 6)</span>
+ <span class="token comment" spellcheck="true">#         index += 5</span>
+</code></pre>
+<h4 id="YUV-NV21数据解析"><a href="#YUV-NV21数据解析" class="headerlink" title="YUV NV21数据解析"></a>YUV NV21数据解析</h4><pre class=" language-python"><code class="language-python"> <span class="token comment" spellcheck="true">#img_height*img_width的数据为Y，后面的为VU分量排列 4个Y共用一组VU分量</span>
+ array_height <span class="token operator">=</span> int<span class="token punctuation">(</span>img_height <span class="token operator">*</span> <span class="token number">1.5</span><span class="token punctuation">)</span>  
+ imgData <span class="token operator">=</span> np<span class="token punctuation">.</span>fromfile<span class="token punctuation">(</span>srcfile<span class="token punctuation">,</span> dtype<span class="token operator">=</span><span class="token string">'uint8'</span><span class="token punctuation">)</span>
+ img <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">(</span>img_height<span class="token punctuation">,</span> img_width<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span>np<span class="token punctuation">.</span>uint8<span class="token punctuation">)</span>
+ yuvData <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">(</span>array_height<span class="token punctuation">,</span> img_width<span class="token punctuation">)</span><span class="token punctuation">)</span>
+ index <span class="token operator">=</span> <span class="token number">0</span>
+ <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> array_height<span class="token punctuation">)</span><span class="token punctuation">:</span>
+         <span class="token keyword">for</span> j <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> img_width<span class="token punctuation">)</span><span class="token punctuation">:</span>
+             yuvData<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> imgData<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
+             index <span class="token operator">+=</span> <span class="token number">1</span>
+</code></pre>
+</li>
+<li><p>openpyxl的使用</p>
+<h4 id="创建Excel表格"><a href="#创建Excel表格" class="headerlink" title="创建Excel表格"></a>创建Excel表格</h4><pre class=" language-python"><code class="language-python">wb <span class="token operator">=</span> Workbook<span class="token punctuation">(</span><span class="token punctuation">)</span>                             <span class="token comment" spellcheck="true">#申请workbook</span>
+ws <span class="token operator">=</span> wb<span class="token punctuation">.</span>active                              <span class="token comment" spellcheck="true">#激活worksheet</span>
+ws<span class="token punctuation">.</span>merge_cells<span class="token punctuation">(</span><span class="token string">'B1:E1'</span><span class="token punctuation">)</span>                     <span class="token comment" spellcheck="true">#合并单元格</span>
+··· 
+ws<span class="token punctuation">[</span><span class="token string">'B1'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'Center'</span>                         <span class="token comment" spellcheck="true">#赋值</span>
+···
+wb<span class="token punctuation">.</span>save<span class="token punctuation">(</span>self<span class="token punctuation">.</span>savepath<span class="token operator">+</span><span class="token string">'Strobe_test.xlsx'</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">#保存</span>
+</code></pre>
+<h4 id="修改Excel表格"><a href="#修改Excel表格" class="headerlink" title="修改Excel表格"></a>修改Excel表格</h4><pre class=" language-python"><code class="language-python">wb <span class="token operator">=</span> load_workbook<span class="token punctuation">(</span>filename<span class="token operator">=</span>self<span class="token punctuation">.</span>savepath<span class="token operator">+</span><span class="token string">'Strobe_test.xlsx'</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">#打开workbook</span>
+ws <span class="token operator">=</span> wb<span class="token punctuation">.</span>active                                                  <span class="token comment" spellcheck="true">#打开worksheet</span>
+ws<span class="token punctuation">.</span>cell<span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value <span class="token operator">=</span> Strobe_name<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>                <span class="token comment" spellcheck="true">#赋值</span>
+ws<span class="token punctuation">.</span>cell<span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+···
+wb<span class="token punctuation">.</span>save<span class="token punctuation">(</span>self<span class="token punctuation">.</span>savepath<span class="token operator">+</span><span class="token string">'Strobe_test.xlsx'</span><span class="token punctuation">)</span>                       <span class="token comment" spellcheck="true">#保存</span>
+</code></pre>
+</li>
+<li><p>xlwings的使用</p>
+<pre class=" language-python"><code class="language-python">app <span class="token operator">=</span> xw<span class="token punctuation">.</span>App<span class="token punctuation">(</span>visible<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> add_book<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>                     <span class="token comment" spellcheck="true">#设置不可视，不可添加book</span>
+wb <span class="token operator">=</span> app<span class="token punctuation">.</span>books<span class="token punctuation">.</span>open<span class="token punctuation">(</span><span class="token string">'TS_Objective_Test_Report-Template.xlsx'</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">#打开模板文件</span>
+sht <span class="token operator">=</span> wb<span class="token punctuation">.</span>sheets<span class="token punctuation">[</span><span class="token string">'Criteria'</span><span class="token punctuation">]</span>                                     <span class="token comment" spellcheck="true">#指定worksheet</span>
+sht<span class="token punctuation">.</span>range<span class="token punctuation">(</span><span class="token string">'J26'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">" "</span>                                    <span class="token comment" spellcheck="true">#赋值</span>
+····
+wb<span class="token punctuation">.</span>save<span class="token punctuation">(</span>savename<span class="token punctuation">)</span>                                               <span class="token comment" spellcheck="true">#保存</span>
+wb<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>                                                      <span class="token comment" spellcheck="true">#关闭workbook</span>
+app<span class="token punctuation">.</span>quit<span class="token punctuation">(</span><span class="token punctuation">)</span>                                                      <span class="token comment" spellcheck="true">#停止app</span>
+</code></pre>
+</li>
+<li><p>绘图</p>
+<h4 id="折线图-matplotlib-pyplot"><a href="#折线图-matplotlib-pyplot" class="headerlink" title="折线图(matplotlib.pyplot)"></a>折线图(matplotlib.pyplot)</h4><pre class=" language-python"><code class="language-python">plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>line_R<span class="token punctuation">,</span> <span class="token string">'R'</span><span class="token punctuation">,</span> line_G<span class="token punctuation">,</span> <span class="token string">'G'</span><span class="token punctuation">,</span> line_B<span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">)</span>                   <span class="token comment" spellcheck="true">#line_R为数组 plt.plot进行绘制</span>
+fname <span class="token operator">=</span> srcfile<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>                                    <span class="token comment" spellcheck="true">#获得文件名</span>
+savenameB <span class="token operator">=</span> self<span class="token punctuation">.</span>savepath <span class="token operator">+</span> fname<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">'_shadingB.jpg'</span> <span class="token comment" spellcheck="true">#保存路径+保存名</span>
+plt<span class="token punctuation">.</span>savefig<span class="token punctuation">(</span>savename1<span class="token punctuation">)</span>                                            <span class="token comment" spellcheck="true">#保存</span>
+</code></pre>
+<h4 id="色彩图-opencv"><a href="#色彩图-opencv" class="headerlink" title="色彩图(opencv)"></a>色彩图(opencv)</h4><pre class=" language-python"><code class="language-python">font <span class="token operator">=</span> cv2<span class="token punctuation">.</span>FONT_HERSHEY_SIMPLEX                                     <span class="token comment" spellcheck="true">#设置字体</span>
+img_R <span class="token operator">=</span> cv2<span class="token punctuation">.</span>resize<span class="token punctuation">(</span>img_R<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">324</span><span class="token punctuation">,</span> <span class="token number">324</span><span class="token punctuation">)</span><span class="token punctuation">)</span>                               <span class="token comment" spellcheck="true">#扩大图片</span>
+midR <span class="token operator">=</span> <span class="token string">"middle:(40,40)max:({0},{1})"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>self<span class="token punctuation">.</span>midRx<span class="token punctuation">,</span> self<span class="token punctuation">.</span>midRy<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#图片上添加的文字</span>
+cv2<span class="token punctuation">.</span>putText<span class="token punctuation">(</span>img_R<span class="token punctuation">,</span> midR<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span> font<span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">)</span>       <span class="token comment" spellcheck="true">#添加文字到图片</span>
+cv2<span class="token punctuation">.</span>imencode<span class="token punctuation">(</span><span class="token string">'.jpg'</span><span class="token punctuation">,</span>img_R<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>tofile<span class="token punctuation">(</span>savenameR<span class="token punctuation">)</span>                     <span class="token comment" spellcheck="true">#保存图片，可以中文路径</span>
+<span class="token comment" spellcheck="true">#cv2.imwrite(savename,img_R)                                        #不可中文路径</span>
+</code></pre>
+</li>
+<li><p>RAW图转换</p>
+<h4 id="转换成ppm"><a href="#转换成ppm" class="headerlink" title="转换成ppm"></a>转换成ppm</h4><pre class=" language-python"><code class="language-python">fname <span class="token operator">=</span> srcfile<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>                                                          <span class="token comment" spellcheck="true">#获取文件名</span>
+savename <span class="token operator">=</span> self<span class="token punctuation">.</span>savepath <span class="token operator">+</span> fname<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">'.pmm'</span>                                 <span class="token comment" spellcheck="true">#新建文件路径及名称</span>
+file <span class="token operator">=</span> open<span class="token punctuation">(</span>savename<span class="token punctuation">,</span><span class="token string">'a'</span><span class="token punctuation">)</span>                                                               <span class="token comment" spellcheck="true">#若有文件则打开，若无则新建</span>
+file<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"P3\n"</span><span class="token operator">+</span>str<span class="token punctuation">(</span>img_width<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">" "</span><span class="token operator">+</span>str<span class="token punctuation">(</span>img_height<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"\n255\n"</span><span class="token punctuation">)</span>                         <span class="token comment" spellcheck="true">#向文件中写入头数据</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>img_height<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> j <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>img_width<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        file<span class="token punctuation">.</span>write<span class="token punctuation">(</span>str<span class="token punctuation">(</span>img<span class="token punctuation">[</span>i<span class="token punctuation">,</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">" "</span><span class="token operator">+</span>str<span class="token punctuation">(</span>img<span class="token punctuation">[</span>i<span class="token punctuation">,</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">" "</span><span class="token operator">+</span>str<span class="token punctuation">(</span>img<span class="token punctuation">[</span>i<span class="token punctuation">,</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"\n"</span><span class="token punctuation">)</span>     <span class="token comment" spellcheck="true">#向文件中写入图片数据</span>
+file<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>                                                                            <span class="token comment" spellcheck="true">#关闭文件</span>
+</code></pre>
+<h4 id="转换成bmp"><a href="#转换成bmp" class="headerlink" title="转换成bmp"></a>转换成bmp</h4><pre class=" language-python"><code class="language-python">cv2<span class="token punctuation">.</span>imencode<span class="token punctuation">(</span><span class="token string">'.bmp'</span><span class="token punctuation">,</span> img<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>tofile<span class="token punctuation">(</span>savename<span class="token punctuation">)</span>                                           <span class="token comment" spellcheck="true">#opencv可以转换bmp</span>
+<span class="token comment" spellcheck="true">#cv2.imwrite(savename, img)</span>
+</code></pre>
+</li>
+<li><p>鼠标事件(主要是相对坐标的问题)</p>
+<h4 id="鼠标点击事件"><a href="#鼠标点击事件" class="headerlink" title="鼠标点击事件"></a>鼠标点击事件</h4><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#得到相对坐标，并写入起始坐标</span>
+<span class="token keyword">def</span> <span class="token function">mousePressEvent</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> event<span class="token punctuation">)</span><span class="token punctuation">:</span> 
+</code></pre>
+<h4 id="鼠标松开事件"><a href="#鼠标松开事件" class="headerlink" title="鼠标松开事件"></a>鼠标松开事件</h4><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#得到相对坐标，并写入终止位置</span>
+<span class="token keyword">def</span> <span class="token function">mouseReleaseEvent</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>event<span class="token punctuation">)</span><span class="token punctuation">:</span>
+</code></pre>
+<h4 id="鼠标移动事件"><a href="#鼠标移动事件" class="headerlink" title="鼠标移动事件"></a>鼠标移动事件</h4><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#移动过程实时更新鼠标当时坐标</span>
+<span class="token keyword">def</span> <span class="token function">mouseMoveEvent</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> event<span class="token punctuation">)</span><span class="token punctuation">:</span>
+</code></pre>
+<h4 id="鼠标双击事件"><a href="#鼠标双击事件" class="headerlink" title="鼠标双击事件"></a>鼠标双击事件</h4><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#双击鼠标隐藏阴影，清空坐标</span>
+<span class="token keyword">def</span> <span class="token function">mouseDoubleClickEvent</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> event<span class="token punctuation">)</span><span class="token punctuation">:</span>
+</code></pre>
+</li>
+<li><p>绘制阴影区域 （相对坐标问题）</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">paintEvent</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>event<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> self<span class="token punctuation">.</span>draw<span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>label_1<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>                                                         <span class="token comment" spellcheck="true">#显示阴影</span>
+        qp <span class="token operator">=</span> QtGui<span class="token punctuation">.</span>QPainter<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true">#获得相对位置</span>
+        ……
+        <span class="token comment" spellcheck="true">#超过区域规整</span>
+        ……
+
+        self<span class="token punctuation">.</span>tmpLabel<span class="token punctuation">.</span>setGeometry<span class="token punctuation">(</span>QtCore<span class="token punctuation">.</span>QRect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>StartX<span class="token punctuation">,</span>self<span class="token punctuation">.</span>StartY<span class="token number">-23</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>EndX<span class="token operator">-</span>self<span class="token punctuation">.</span>StartX<span class="token punctuation">,</span>self<span class="token punctuation">.</span>EndY<span class="token operator">-</span>self<span class="token punctuation">.</span>StartY<span class="token punctuation">)</span><span class="token punctuation">)</span>                                                   <span class="token comment" spellcheck="true">#显示区域</span>
+        self<span class="token punctuation">.</span>tmpLabel<span class="token punctuation">.</span>setObjectName<span class="token punctuation">(</span><span class="token string">"tmpLabel"</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>tmpLabel<span class="token punctuation">.</span>setAutoFillBackground<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>tmpLabel<span class="token punctuation">.</span>setMouseTracking<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+        qp<span class="token punctuation">.</span>begin<span class="token punctuation">(</span>self<span class="token punctuation">.</span>tmpLabel<span class="token punctuation">)</span>                                                   <span class="token comment" spellcheck="true">#在tmpLabel上绘图</span>
+
+        selectedRect <span class="token operator">=</span> QRect<span class="token punctuation">(</span>pos_x<span class="token punctuation">,</span> pos_y<span class="token punctuation">,</span> pos_x_1<span class="token operator">-</span>pos_x<span class="token punctuation">,</span> pos_y_1<span class="token operator">-</span>pos_y<span class="token punctuation">)</span>          <span class="token comment" spellcheck="true">#选取图片区域</span>
+
+        capturePixmap <span class="token operator">=</span> self<span class="token punctuation">.</span>label<span class="token punctuation">.</span>pixmap<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>copy<span class="token punctuation">(</span>selectedRect<span class="token punctuation">)</span>                    <span class="token comment" spellcheck="true">#将label上的图片copy到capturePixmap</span>
+        self<span class="token punctuation">.</span>tmpLabel<span class="token punctuation">.</span>setPixmap<span class="token punctuation">(</span>capturePixmap<span class="token punctuation">)</span>                                    <span class="token comment" spellcheck="true">#在tmpLabel上贴上所选图片</span>
+        <span class="token comment" spellcheck="true"># qp.drawPixmap(capturePixmap)</span>
+
+        self<span class="token punctuation">.</span>tmpLabel<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>                                                      <span class="token comment" spellcheck="true">#显示tmpLabel</span>
+
+        qp<span class="token punctuation">.</span>end<span class="token punctuation">(</span><span class="token punctuation">)</span>                                                                  <span class="token comment" spellcheck="true">#绘图结束</span>
+        self<span class="token punctuation">.</span>draw <span class="token operator">=</span> <span class="token boolean">False</span>
+</code></pre>
+</li>
+<li><p>python加速</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">xxx</span>：
+    @jit
+    <span class="token keyword">def</span> xxx：  <span class="token comment" spellcheck="true">#对该函数进行加速</span>
+        ···
+</code></pre>
+</li>
+</ol>
+<h2 id="生成exe文件"><a href="#生成exe文件" class="headerlink" title="生成exe文件"></a>生成exe文件</h2><p>在powershell中键入命令、-F生成可执行文件 -w不显示cmd框， -i 设置图标，–hidden-import 导入模块</p>
+<blockquote>
+<p>pyinstaller -F -w -i -xxx.ico xxx.py  </p>
+</blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><hr>
+<p>你像一首唱到沙哑偏爱的情歌，<br>你真好看。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li> Copyright &copy; 流尘 </li>
+            </ul>
+            
+				<span id="busuanzi_container_site_pv"> 2018 </span> 
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

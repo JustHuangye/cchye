@@ -1,0 +1,675 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    这是一片荒野
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="荒野">
+    
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">WILDERNESS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/project/" title="项目">
+		                项目
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/essay/" title="随笔">
+		                随笔
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/study/" title="学习">
+		                学习
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="http://github.com/JustHuangye" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="envelope" href="mailto:lcmail1001@163.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-envelope"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="wechat" href="http://m.qpic.cn/psb?/V125eqhn4SqTbT/qiLECHXPszb44SsEPW8HQDkdQ*SlCPnCDrTTj5sqlQs!/b/dLYAAAAAAAAA&bo=rgGuAQAAAAARBzA!&rf=viewer_4" target="_blank" rel="noopener">
+                            <i class="icon fa fa-wechat"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(http://m.qpic.cn/psb?/V125eqhn2Y8tx7/7zl.vnYELCOGbR6mVSdE9p6QnMmBDRVH4VLTzPMEYUA!/b/dPMAAAAAAAAA&amp;bo=sAQgA7AEIAMRCT4!&amp;rf=viewer_4);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>十种基本的排序算法</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>实习结束，暂时没有什么别的事情，秋招也基本结束，随缘的投了几家公司，增加一点面试的经验。<br>有太多的东西，自己还不够了解，想要多学习一点，为自己的以后添一块砖。<br>于是，先找一个只知道一部分原理，但是没好好整理过的排序吧。<br>下面的排序结果都是升序（按照从小到大的顺序）。<br>然后不知道为什么C的代码没有高亮,所以都用了python的样式…有点蓝廋</p>
+<h1 id="一、冒泡排序"><a href="#一、冒泡排序" class="headerlink" title="一、冒泡排序"></a>一、冒泡排序</h1><blockquote>
+<p>依据陶某人的介绍，就是像冒泡一样的排序就叫冒泡排序。<br>那么什么叫像冒泡一样的排序呢。</p>
+</blockquote>
+<pre><code>简单来说，冒泡排序就是依次比较相邻的元素，如果前者较大，则进行交换。
+步骤就是这样：
+    1.比较相邻的元素，如果前一个比后一个大，则交换两个元素;
+    2.对每一对相邻元素都进行1步骤，从第一对到最后一对。第一轮结束之后，最大的元素则在最后的位置;
+    3.进行第二轮比较，应排除上一轮的最后一个元素;
+    4.重复上述的步骤，直到没有数字需要交换;
+</code></pre><p>代码实现：</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># python</span>
+<span class="token keyword">def</span> <span class="token function">Bubble_sort</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token number">-1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token number">-1</span><span class="token operator">-</span>i<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            sortble <span class="token operator">=</span> <span class="token boolean">True</span>   <span class="token comment" spellcheck="true"># 用来判断是否已经排好序</span>
+            <span class="token keyword">if</span> a<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">:</span>
+                a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
+                sortble <span class="token operator">=</span> <span class="token boolean">False</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>sortble<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">break</span>
+</code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token operator">//</span> C
+void Bubble_sort<span class="token punctuation">(</span>int arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>int n<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    int i<span class="token punctuation">,</span>j<span class="token punctuation">,</span>temp<span class="token punctuation">;</span>
+    bool sortable <span class="token operator">=</span> false<span class="token punctuation">;</span>   <span class="token operator">//</span> 用来判断是否已经排好序
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>i<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>n<span class="token operator">-</span>i<span class="token number">-1</span><span class="token punctuation">;</span>j<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">></span>arr<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                temp <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                arr<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+                sortable <span class="token operator">=</span> true<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>!sortable<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h1 id="二、快速排序"><a href="#二、快速排序" class="headerlink" title="二、快速排序"></a>二、快速排序</h1><pre><code>简单来说，快速排序是冒泡排序的升级版。
+步骤就是这样：
+    1.设置两个变量L、R，分别为数组的第一个位置和最后一个位置，第一轮一般为0和n-1，即L=0，R =n-1；
+    2.以第一个元素为关键数据key，即key = a[L]；
+    3.从后往前搜索，找到第一个小于key的值a[R]，交换A[L]、A[R]；
+    4.从前往后搜索，找到第一个大于key的值a[L]，交换A[L]、A[R]；
+    5.重复3，4步骤，直到L=R，此时L左边的值均小于key，L右边的值均大于key；
+    6.将数组分为两部分，再采用递归继续进行快速排序，最终得到有序序列。
+</code></pre><p>代码实现：</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># python 分治+递归</span>
+<span class="token keyword">def</span> <span class="token function">Quick_sort</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> len<span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token number">2</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> a
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        key <span class="token operator">=</span> a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+        less <span class="token operator">=</span> <span class="token punctuation">[</span>l <span class="token keyword">for</span> l <span class="token keyword">in</span> a <span class="token keyword">if</span> l <span class="token operator">&lt;</span> key<span class="token punctuation">]</span>
+        equal <span class="token operator">=</span> <span class="token punctuation">[</span>e <span class="token keyword">for</span> e <span class="token keyword">in</span> a <span class="token keyword">if</span> e <span class="token operator">==</span> key<span class="token punctuation">]</span>
+        greater <span class="token operator">=</span> <span class="token punctuation">[</span>g <span class="token keyword">for</span> g <span class="token keyword">in</span> a <span class="token keyword">if</span> g <span class="token operator">></span> key<span class="token punctuation">]</span>
+        <span class="token keyword">return</span> Quick_sort<span class="token punctuation">(</span>less<span class="token punctuation">)</span> <span class="token operator">+</span> equal <span class="token operator">+</span> Quick_sort<span class="token punctuation">(</span>greater<span class="token punctuation">)</span>    
+</code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># C 递归</span>
+void Quick_sort<span class="token punctuation">(</span>int arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> int Lindex<span class="token punctuation">,</span> int Rindex<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    int L<span class="token punctuation">,</span>R<span class="token punctuation">,</span>key<span class="token punctuation">;</span>
+    L <span class="token operator">=</span> Lindex<span class="token punctuation">;</span>
+    R <span class="token operator">=</span> Rindex<span class="token punctuation">;</span>
+    key <span class="token operator">=</span> arr<span class="token punctuation">[</span>L<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>L<span class="token operator">&lt;</span>R<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>L<span class="token operator">&lt;</span>R <span class="token operator">&amp;</span><span class="token operator">&amp;</span> arr<span class="token punctuation">[</span>R<span class="token punctuation">]</span><span class="token operator">>=</span>key<span class="token punctuation">)</span> R<span class="token operator">-</span><span class="token operator">-</span><span class="token punctuation">;</span>
+        arr<span class="token punctuation">[</span>L<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>R<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>L<span class="token operator">&lt;</span>R <span class="token operator">&amp;</span><span class="token operator">&amp;</span> arr<span class="token punctuation">[</span>L<span class="token punctuation">]</span><span class="token operator">&lt;=</span>key<span class="token punctuation">)</span> L<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">;</span>
+        arr<span class="token punctuation">[</span>R<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>L<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    arr<span class="token punctuation">[</span>L<span class="token punctuation">]</span> <span class="token operator">=</span> key<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>L<span class="token operator">-</span>Lindex<span class="token operator">></span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        Quick_sort<span class="token punctuation">(</span>arr<span class="token punctuation">,</span>Lindex<span class="token punctuation">,</span>L<span class="token number">-1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>Rindex<span class="token operator">-</span>R<span class="token operator">></span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        Quick_sort<span class="token punctuation">(</span>arr<span class="token punctuation">,</span>R<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>Rindex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h1 id="三、插入排序"><a href="#三、插入排序" class="headerlink" title="三、插入排序"></a>三、插入排序</h1><pre><code>简单来说，插入排序就是将未排序的元素插入到有序序列中。
+步骤就是这样：
+    1.从有序序列和无序序列{a2,a3，…，an}开始进行排序；
+    2.处理第i个元素时（i=2,3，…，n），序列{a1,a2，…，ai-1}是已有序的，而序列{ai,ai+1，…，an}是无序的。用ai与ai-1，a i-2，…，a1进行比较，找出合适的位置将ai插入；
+    3.重复第二步，共进行n-1次插入处理,序列全部有序。
+</code></pre><p>代码实现：</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># python</span>
+<span class="token keyword">def</span> <span class="token function">Insert_sort</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> range <span class="token punctuation">(</span>i<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">&lt;</span>a<span class="token punctuation">[</span>j<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+                a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span>j<span class="token number">-1</span><span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>j<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
+</code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token operator">//</span> C
+void Insert_sort<span class="token punctuation">(</span>int arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>int n<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    int i<span class="token punctuation">,</span>j<span class="token punctuation">,</span>temp<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>i<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">&lt;</span>arr<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            temp <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span>i<span class="token punctuation">;</span>j<span class="token operator">></span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">-</span><span class="token operator">-</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">&lt;</span>arr<span class="token punctuation">[</span>j<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">else</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h1 id="四、希尔排序"><a href="#四、希尔排序" class="headerlink" title="四、希尔排序"></a>四、希尔排序</h1><pre><code>简单来说，就是插入排序的升级版。
+步骤就是这样：
+    1.设置增量d,初始值一般为n/2，将序列进行分组；
+    2.对于每一组序列进行插入排序；
+    3.然后缩小增量，继续进行分组插入排序；
+    4.直到d&lt;1,序列全部有序。
+</code></pre><p>代码实现：</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># python</span>
+<span class="token keyword">def</span> <span class="token function">Shell_sort</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    d <span class="token operator">=</span> int<span class="token punctuation">(</span>n<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">while</span> d<span class="token operator">>=</span><span class="token number">1</span><span class="token punctuation">:</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> j <span class="token keyword">in</span> range <span class="token punctuation">(</span>i<span class="token punctuation">,</span>n<span class="token punctuation">,</span>d<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">for</span> k <span class="token keyword">in</span> range <span class="token punctuation">(</span>j<span class="token punctuation">,</span>n<span class="token punctuation">,</span>d<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                    <span class="token keyword">if</span> a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">></span>a<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">:</span>
+                        a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
+        d <span class="token operator">=</span> int<span class="token punctuation">(</span>d<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span>
+</code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token operator">//</span> C
+void Shell_sort<span class="token punctuation">(</span>int arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>int n<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    int d<span class="token punctuation">,</span>i<span class="token punctuation">,</span>j<span class="token punctuation">,</span>k<span class="token punctuation">,</span>temp<span class="token punctuation">;</span>
+    d <span class="token operator">=</span> n<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>d<span class="token operator">>=</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>d<span class="token punctuation">;</span>i<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span>i<span class="token punctuation">;</span>j<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>j<span class="token operator">+=</span>d<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">for</span><span class="token punctuation">(</span>k<span class="token operator">=</span>j<span class="token punctuation">;</span>k<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>k<span class="token operator">+=</span>d<span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token operator">&lt;</span>arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">{</span>
+                        temp <span class="token operator">=</span> arr<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                        arr<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                        arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span> 
+        d <span class="token operator">=</span> d<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span>   
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h1 id="五、选择排序"><a href="#五、选择排序" class="headerlink" title="五、选择排序"></a>五、选择排序</h1><pre><code>简单来说，就是选出无序序列中的最小值，放入相应的位置。
+步骤就是这样：
+    1.初始状态：序列全部无序；
+    2.第一趟排序，在无序序列中找出最小的值，然后与第一个值交换，此时第一个有序，后面n-1个值无序；
+    3.第i趟排序，前i-1个值为有序序列，后n-i-1个值无序，在无序序列中找出最小值，与第i个值交换；
+    4.直到第n趟排序，得到有序序列。
+</code></pre><p>代码实现：</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># python</span>
+<span class="token keyword">def</span> <span class="token function">Select_sort</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        min <span class="token operator">=</span> i
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> range <span class="token punctuation">(</span>i<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">&lt;</span>a<span class="token punctuation">[</span>min<span class="token punctuation">]</span><span class="token punctuation">:</span>
+                min <span class="token operator">=</span> j
+        a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span>min<span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>min<span class="token punctuation">]</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+</code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token operator">//</span> C
+void Select_sort<span class="token punctuation">(</span>int arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>int n<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    int i<span class="token punctuation">,</span>j<span class="token punctuation">,</span>temp<span class="token punctuation">,</span>min<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>i<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        min <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span>i<span class="token punctuation">;</span>j<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>j<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">&lt;</span>arr<span class="token punctuation">[</span>min<span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                min <span class="token operator">=</span> j<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>min<span class="token operator">!=</span>i<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            temp <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>min<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            arr<span class="token punctuation">[</span>min<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h1 id="六、堆排序"><a href="#六、堆排序" class="headerlink" title="六、堆排序"></a>六、堆排序</h1><pre><code>简单来说，就是构造大顶堆，然后交换数值。然而大顶堆就是类似于二叉树，所有父节点均大于其子节点。
+步骤就是这样：
+    1.首先将n个数值构造成大顶堆；
+    2.将堆顶数值与堆底数值交换，然后将第一个到第n-i个数值重新调整为大顶堆；
+    3.重复步骤2，得到有序序列。
+</code></pre><p>代码实现：</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># python</span>
+<span class="token keyword">def</span> <span class="token function">Build_MaxHeap</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>start<span class="token punctuation">,</span>end<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    dad <span class="token operator">=</span> start
+    son <span class="token operator">=</span> dad<span class="token operator">*</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>son<span class="token operator">&lt;</span>end<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>son<span class="token operator">+</span><span class="token number">1</span><span class="token operator">&lt;</span>end <span class="token operator">and</span> a<span class="token punctuation">[</span>son<span class="token punctuation">]</span><span class="token operator">&lt;</span>a<span class="token punctuation">[</span>son<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            son<span class="token operator">+=</span><span class="token number">1</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>dad<span class="token punctuation">]</span><span class="token operator">&lt;</span>a<span class="token punctuation">[</span>son<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            a<span class="token punctuation">[</span>dad<span class="token punctuation">]</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span>son<span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>son<span class="token punctuation">]</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span>dad<span class="token punctuation">]</span>
+            dad <span class="token operator">=</span> son
+            son <span class="token operator">=</span> dad<span class="token operator">*</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span> <span class="token keyword">break</span>
+
+<span class="token keyword">def</span> <span class="token function">Heap_sort</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range <span class="token punctuation">(</span>int<span class="token punctuation">(</span>n<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        Build_MaxHeap<span class="token punctuation">(</span>a<span class="token punctuation">,</span>i<span class="token punctuation">,</span>n<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token number">-1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+        a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        Build_MaxHeap<span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>i<span class="token punctuation">)</span>
+
+</code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token operator">//</span> C
+void Build_MaxHeap<span class="token punctuation">(</span>int arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>int start<span class="token punctuation">,</span>int end<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    int dad<span class="token punctuation">,</span>son<span class="token punctuation">,</span>i<span class="token punctuation">,</span>j<span class="token punctuation">,</span>temp<span class="token punctuation">;</span>
+    dad <span class="token operator">=</span> start<span class="token punctuation">;</span>
+    son <span class="token operator">=</span> dad<span class="token operator">*</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>son<span class="token operator">&lt;</span>end<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>son<span class="token operator">+</span><span class="token number">1</span><span class="token operator">&lt;</span>end <span class="token operator">&amp;</span><span class="token operator">&amp;</span> arr<span class="token punctuation">[</span>son<span class="token punctuation">]</span><span class="token operator">&lt;</span>arr<span class="token punctuation">[</span>son<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  son<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>dad<span class="token punctuation">]</span><span class="token operator">&lt;</span>arr<span class="token punctuation">[</span>son<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            temp <span class="token operator">=</span> arr<span class="token punctuation">[</span>dad<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            arr<span class="token punctuation">[</span>dad<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>son<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            arr<span class="token punctuation">[</span>son<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+            dad <span class="token operator">=</span> son<span class="token punctuation">;</span>
+            son <span class="token operator">=</span> dad<span class="token operator">*</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+void Heap_sort<span class="token punctuation">(</span>int arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>int n<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    int i<span class="token punctuation">,</span>j<span class="token punctuation">,</span>temp<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span>n<span class="token operator">/</span><span class="token number">2</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">-</span><span class="token operator">-</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        Build_MaxHeap<span class="token punctuation">(</span>arr<span class="token punctuation">,</span>i<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span>n<span class="token number">-1</span><span class="token punctuation">;</span>j<span class="token operator">></span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">-</span><span class="token operator">-</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        temp <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+        Build_MaxHeap<span class="token punctuation">(</span>arr<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>j<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre>
+<h1 id="七、合并排序（也叫归并排序）"><a href="#七、合并排序（也叫归并排序）" class="headerlink" title="七、合并排序（也叫归并排序）"></a>七、合并排序（也叫归并排序）</h1><pre><code>简单来说，就是将两个有序的序列合并成一个有序序列。
+步骤就是这样：
+    1.先将序列一分为二，利用递归，将子序列分最小即只有一个元素，则此时左序列只有一个元素，右序列为1-2个元素（2个需要继续分，然后进行合并排序）；
+    2.左序列与右序列合并，此时的左序列为有已排序三个元素，此时的右序列也应如左序列有3-4个元素，且已排序；
+    3.然后依次合并序列，得到有序序列。
+</code></pre><p>代码实现：</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># python</span>
+<span class="token keyword">def</span> <span class="token function">Merge</span><span class="token punctuation">(</span>left<span class="token punctuation">,</span>right<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    i<span class="token punctuation">,</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span>
+    result <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>i<span class="token operator">&lt;</span>len<span class="token punctuation">(</span>left<span class="token punctuation">)</span> <span class="token operator">and</span> j<span class="token operator">&lt;</span>len<span class="token punctuation">(</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> left<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">&lt;</span>right<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">:</span>
+            result<span class="token punctuation">.</span>append<span class="token punctuation">(</span>left<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+            i <span class="token operator">+=</span> <span class="token number">1</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            result<span class="token punctuation">.</span>append<span class="token punctuation">(</span>right<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+            j <span class="token operator">+=</span> <span class="token number">1</span>
+    result <span class="token operator">+=</span> list<span class="token punctuation">(</span>left<span class="token punctuation">[</span>i<span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    result <span class="token operator">+=</span> list<span class="token punctuation">(</span>right<span class="token punctuation">[</span>j<span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> result
+
+<span class="token keyword">def</span> <span class="token function">Merge_sort</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> len<span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token operator">&lt;=</span><span class="token number">1</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> a
+    num <span class="token operator">=</span> int<span class="token punctuation">(</span>len<span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span>
+    left <span class="token operator">=</span> Merge_sort<span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token punctuation">:</span>num<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    right <span class="token operator">=</span> Merge_sort<span class="token punctuation">(</span>a<span class="token punctuation">[</span>num<span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> Merge<span class="token punctuation">(</span>left<span class="token punctuation">,</span>right<span class="token punctuation">)</span>
+
+
+</code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token operator">//</span> C
+void Merge<span class="token punctuation">(</span>int arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>int start<span class="token punctuation">,</span>int mid<span class="token punctuation">,</span>int end<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    int x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>i<span class="token punctuation">,</span>j<span class="token punctuation">,</span>l<span class="token punctuation">,</span>r<span class="token punctuation">;</span>
+    x <span class="token operator">=</span> mid <span class="token operator">-</span> start <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    y <span class="token operator">=</span> end <span class="token operator">-</span> mid<span class="token punctuation">;</span>
+    int <span class="token operator">*</span>L <span class="token operator">=</span> new int<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    int <span class="token operator">*</span>R <span class="token operator">=</span> new int<span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>x<span class="token punctuation">;</span>i<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        L<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>start<span class="token operator">+</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>y<span class="token punctuation">;</span>i<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        R<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>mid<span class="token operator">+</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    l <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>l<span class="token operator">&lt;</span>x <span class="token operator">&amp;</span><span class="token operator">&amp;</span> r<span class="token operator">&lt;</span>y<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>L<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token operator">&lt;</span>R<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">)</span> arr<span class="token punctuation">[</span>start<span class="token operator">+</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> L<span class="token punctuation">[</span>l<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span>   arr<span class="token punctuation">[</span>start<span class="token operator">+</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> R<span class="token punctuation">[</span>r<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        j<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>l<span class="token operator">&lt;</span>x<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        arr<span class="token punctuation">[</span>start<span class="token operator">+</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> L<span class="token punctuation">[</span>l<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        j<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>r<span class="token operator">&lt;</span>y<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        arr<span class="token punctuation">[</span>start<span class="token operator">+</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> R<span class="token punctuation">[</span>r<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        j<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    delete L<span class="token punctuation">,</span>R<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+void Merge_sort<span class="token punctuation">(</span>int arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>int start<span class="token punctuation">,</span>int end<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    int mid<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>start<span class="token operator">&lt;</span>end<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        mid <span class="token operator">=</span> <span class="token punctuation">(</span>start<span class="token operator">+</span>end<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span>
+        Merge_sort<span class="token punctuation">(</span>arr<span class="token punctuation">,</span>start<span class="token punctuation">,</span>mid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Merge_sort<span class="token punctuation">(</span>arr<span class="token punctuation">,</span>mid<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>end<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Merge<span class="token punctuation">(</span>arr<span class="token punctuation">,</span>start<span class="token punctuation">,</span>mid<span class="token punctuation">,</span>end<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre>
+<h1 id="八、计数排序（也叫归并排序）"><a href="#八、计数排序（也叫归并排序）" class="headerlink" title="八、计数排序（也叫归并排序）"></a>八、计数排序（也叫归并排序）</h1><pre><code>简单来说，就是若小于x的元素有n个，则说明第n+1个数是x，即 a[n] = x
+步骤就是这样：
+    1.首先会对每个输入进行频率统计，得到元素的频率表；
+    2.然后将频率表转换为该元素的开始索引；
+    3.据各个元素的开始索引，将相同元素分类到临时数组中；
+    4.最后将临时数组中的元素写回到原数组中。
+</code></pre><p>代码实现：</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># python</span>
+<span class="token keyword">def</span> <span class="token function">Count_sort</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    b <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        small <span class="token operator">=</span> <span class="token number">0</span>
+        equal <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">&lt;</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">:</span>
+                small <span class="token operator">+=</span> <span class="token number">1</span>
+            <span class="token keyword">elif</span> a<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">:</span>
+                equal <span class="token operator">+=</span> <span class="token number">1</span>
+        <span class="token keyword">for</span> k <span class="token keyword">in</span> range <span class="token punctuation">(</span>small<span class="token punctuation">,</span>small<span class="token operator">+</span>equal<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            b<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+    a<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">=</span> b<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+</code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token operator">//</span> C
+void Count_sort<span class="token punctuation">(</span>int arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>int n<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    int max <span class="token operator">=</span> arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    int i<span class="token punctuation">,</span>j<span class="token punctuation">,</span>k<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>i<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">></span>max<span class="token punctuation">)</span>  max <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    max<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">;</span>
+    int <span class="token operator">*</span>b <span class="token operator">=</span> new int<span class="token punctuation">[</span>max<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    int <span class="token operator">*</span>c <span class="token operator">=</span> new int<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>i<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        b<span class="token punctuation">[</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>max<span class="token punctuation">;</span>i<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        b<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> b<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>i<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        c<span class="token punctuation">[</span>b<span class="token punctuation">[</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        b<span class="token punctuation">[</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">-</span><span class="token operator">-</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>i<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> c<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">}</span>
+    delete b<span class="token punctuation">,</span>c<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h1 id="九、桶排序"><a href="#九、桶排序" class="headerlink" title="九、桶排序"></a>九、桶排序</h1><pre><code>简单来说，就是分出N个桶，然后把序列中的元素丢到桶里，进行桶内快排，再将桶连起来，其实与计数有点类似。
+步骤就是这样：
+    1.分N个桶，每个桶的间隔为M，因此N*M&gt;max；
+    2.将序列中的每个元素分别的放入桶中；
+    3.桶内进行快速排序；
+    4.再把每个桶连起来，得到有序序列。
+</code></pre><p>代码实现：</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># python</span>
+<span class="token keyword">def</span> <span class="token function">Bucket_sort</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    max<span class="token punctuation">,</span>min <span class="token operator">=</span> a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">></span>max <span class="token punctuation">:</span>
+            max <span class="token operator">=</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        <span class="token keyword">if</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">&lt;</span>min<span class="token punctuation">:</span>
+            min <span class="token operator">=</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+    gap <span class="token operator">=</span> int<span class="token punctuation">(</span><span class="token punctuation">(</span>max<span class="token operator">-</span>min<span class="token punctuation">)</span><span class="token operator">/</span>n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    bucket_num <span class="token operator">=</span>int<span class="token punctuation">(</span><span class="token punctuation">(</span>max<span class="token operator">-</span>min<span class="token punctuation">)</span><span class="token operator">/</span>gap <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    bucket <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>bucket_num<span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        bucket<span class="token punctuation">[</span>int<span class="token punctuation">(</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">/</span>gap<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span>append<span class="token punctuation">(</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    result <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>bucket_num<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        result <span class="token operator">+=</span> Quick_sort<span class="token punctuation">(</span>bucket<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> result 
+</code></pre>
+<h1 id="十、基数排序"><a href="#十、基数排序" class="headerlink" title="十、基数排序"></a>十、基数排序</h1><pre><code>简单来说，就是按照每一位进行排序,其实和桶排序类似，各个位的数丢到对应的桶中。
+步骤就是这样：
+    1.得到序列最大值的位数digit；
+    2.分10个桶，分别表示当前位数值为0-9；
+    3.第一轮排个位，即个位为1则放入1桶中，个位为3则放入3桶中……再将10个桶连起来；
+    4.进行第二轮排十位……
+    5.第digit轮排完，得到有序序列。
+</code></pre><p>代码实现：</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># python</span>
+<span class="token keyword">def</span> <span class="token function">Radix_sort</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    max <span class="token operator">=</span> a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> a<span class="token punctuation">:</span>
+        <span class="token keyword">if</span> i<span class="token operator">></span>max<span class="token punctuation">:</span>
+            max <span class="token operator">=</span>i
+    digit <span class="token operator">=</span> len<span class="token punctuation">(</span>str<span class="token punctuation">(</span>max<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    div <span class="token operator">=</span> <span class="token number">1</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>digit<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        bucket <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> a<span class="token punctuation">:</span>
+            bucket<span class="token punctuation">[</span>int<span class="token punctuation">(</span>j<span class="token operator">/</span>div<span class="token punctuation">)</span><span class="token operator">%</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">.</span>append<span class="token punctuation">(</span>j<span class="token punctuation">)</span>
+        result <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            result <span class="token operator">+=</span> bucket<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
+        a<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">=</span> result<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+        div <span class="token operator">*=</span> <span class="token number">10</span>
+</code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token operator">//</span> C
+void Radix_sort<span class="token punctuation">(</span>int arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> int n<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    int digit<span class="token punctuation">,</span>i<span class="token punctuation">,</span>p<span class="token punctuation">,</span>j<span class="token punctuation">,</span>k<span class="token punctuation">,</span>radix<span class="token punctuation">;</span>
+    p <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>digit <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>radix <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>i<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">>=</span>p<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            p <span class="token operator">=</span> p<span class="token operator">*</span><span class="token number">10</span><span class="token punctuation">;</span>
+            digit<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>digit<span class="token punctuation">;</span>i<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        int <span class="token operator">*</span>b <span class="token operator">=</span> new int<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+        int <span class="token operator">*</span>c <span class="token operator">=</span> new int <span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>j<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            k <span class="token operator">=</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">/</span>radix<span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">10</span><span class="token punctuation">;</span>
+            b<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span><span class="token number">10</span><span class="token punctuation">;</span>j<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            b<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+=</span> b<span class="token punctuation">[</span>j<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>j<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            k <span class="token operator">=</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">/</span>radix<span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">10</span><span class="token punctuation">;</span>
+            c<span class="token punctuation">[</span>b<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            b<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token operator">-</span><span class="token operator">-</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>j<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> c<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        radix <span class="token operator">*=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+        delete b<span class="token punctuation">,</span>j<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li> Copyright &copy; 流尘 </li>
+            </ul>
+            
+				<span id="busuanzi_container_site_pv"> 2018 </span> 
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

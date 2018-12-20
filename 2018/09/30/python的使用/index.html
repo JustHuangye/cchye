@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    这是一片荒野
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="荒野">
+    
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">WILDERNESS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/project/" title="项目">
+		                项目
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/essay/" title="随笔">
+		                随笔
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/study/" title="学习">
+		                学习
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="http://github.com/JustHuangye" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="envelope" href="mailto:lcmail1001@163.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-envelope"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="wechat" href="http://m.qpic.cn/psb?/V125eqhn4SqTbT/qiLECHXPszb44SsEPW8HQDkdQ*SlCPnCDrTTj5sqlQs!/b/dLYAAAAAAAAA&bo=rgGuAQAAAAARBzA!&rf=viewer_4" target="_blank" rel="noopener">
+                            <i class="icon fa fa-wechat"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(http://m.qpic.cn/psb?/V125eqhn2Y8tx7/8t39sHKbmBJv1FuRKIJ3I4uyNH4QesRbc8sO8d9PtyA!/b/dMMAAAAAAAAA&amp;bo=sAQgA7AEIAMRGS4!&amp;rf=viewer_4);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>python的部分常用操作(持续更新)</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>实习的过程中，某徐姓组长觉得我学有余力，遂安排了一波用python进行工具开发，从此我成为三人实习小队中的最大赢家。<br>由于python也是初次接触，基本语法方面网上有很多教程，比如菜鸟驿站、廖雪峰等，下面就简单的介绍一些比较常用的一些操作。</p>
+<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><ol>
+<li>模块依赖<pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> re
+</code></pre>
+</li>
+<li>简单运用<pre class=" language-python"><code class="language-python">re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">'x(.*)y'</span><span class="token punctuation">,</span>string<span class="token punctuation">)</span>   <span class="token comment" spellcheck="true"># 获得xy中间的数据,返回列表</span>
+<span class="token comment" spellcheck="true"># 获取列表长度len 获取np数组大小shape</span>
+</code></pre>
+</li>
+</ol>
+<h3 id="对文件的操作"><a href="#对文件的操作" class="headerlink" title="对文件的操作"></a>对文件的操作</h3><ol>
+<li>打开文件<pre class=" language-python"><code class="language-python">x <span class="token operator">=</span> open<span class="token punctuation">(</span><span class="token string">'filename'</span><span class="token punctuation">,</span><span class="token string">'r/w/a...'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># r只读，w写，a多次写</span>
+</code></pre>
+</li>
+<li>读取文件中的内容<pre class=" language-python"><code class="language-python">x<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 返回字符串</span>
+</code></pre>
+</li>
+<li>向文件中写入<pre class=" language-python"><code class="language-python">x<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">'string'</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li>关闭文件<pre class=" language-python"><code class="language-python">x<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ol>
+<h3 id="numpy的使用"><a href="#numpy的使用" class="headerlink" title="numpy的使用"></a>numpy的使用</h3><ol>
+<li>引用模块<pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+</code></pre>
+</li>
+<li>创建用0填充的数组<pre class=" language-python"><code class="language-python">np<span class="token punctuation">.</span>zero<span class="token punctuation">(</span><span class="token punctuation">(</span>row<span class="token punctuation">,</span>col<span class="token punctuation">,</span>channel<span class="token punctuation">)</span><span class="token punctuation">,</span>dtype <span class="token operator">=</span> np<span class="token punctuation">.</span>int8<span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># shape分别为数组的行，列，通道数；dtype为数据类型</span>
+<span class="token comment" spellcheck="true"># 返回一个给定形状和类型的用0填充的数组</span>
+</code></pre>
+</li>
+<li>从文件中读取数据<pre class=" language-python"><code class="language-python">np<span class="token punctuation">.</span>fromfile<span class="token punctuation">(</span><span class="token string">'filename'</span><span class="token punctuation">,</span>dtype <span class="token operator">=</span> np<span class="token punctuation">.</span>int8<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#从文件中按指定类型读取数据</span>
+</code></pre>
+</li>
+</ol>
+<h3 id="检查并得到字符串中的数字"><a href="#检查并得到字符串中的数字" class="headerlink" title="检查并得到字符串中的数字"></a>检查并得到字符串中的数字</h3><ol>
+<li><p>简单运用函数</p>
+<pre class=" language-python"><code class="language-python"> num <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+ <span class="token keyword">for</span> i <span class="token keyword">in</span> string<span class="token punctuation">:</span>
+     <span class="token keyword">if</span> i<span class="token punctuation">.</span>isdigit<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>    <span class="token comment" spellcheck="true">#检测字符串是否只由数字组成。</span>
+         num<span class="token punctuation">.</span>append<span class="token punctuation">(</span>i<span class="token punctuation">)</span> 
+</code></pre>
+<p> 同样，isalpha() 检测字符串是否只由字母组成, isalnum()检测字符串是否由字母和数字组成……</p>
+</li>
+<li><p>正则表达式</p>
+<pre class=" language-python"><code class="language-python"> s <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">"\d+"</span><span class="token punctuation">,</span>string<span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li><p>filter<br> filter() 函数用于过滤序列，过滤掉不符合条件的元素，返回由符合条件元素组成的新列表。</p>
+<pre class=" language-python"><code class="language-python"> num <span class="token operator">=</span> filter<span class="token punctuation">(</span>str<span class="token punctuation">.</span>isdigit<span class="token punctuation">,</span> string<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">#注意: Pyhton2.7 返回列表，Python3.x 返回迭代器对象</span>
+ result <span class="token operator">=</span> list<span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#python3.x 将迭代器对象转换为列表</span>
+</code></pre>
+</li>
+</ol>
+<h3 id="小陶同志教的索引大法"><a href="#小陶同志教的索引大法" class="headerlink" title="小陶同志教的索引大法"></a>小陶同志教的索引大法</h3><blockquote>
+<p>index<br> 索引大法好!</p>
+</blockquote>
+<h3 id="对图像的处理"><a href="#对图像的处理" class="headerlink" title="对图像的处理"></a>对图像的处理</h3><blockquote>
+<p>OpenCV！OpenCV！OpenCV！</p>
+</blockquote>
+<h4 id="Dream"><a href="#Dream" class="headerlink" title="Dream"></a>Dream</h4><p>你就是在这幽暗办公室里的一束光，<br>看见你就会变得很明媚。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li> Copyright &copy; 流尘 </li>
+            </ul>
+            
+				<span id="busuanzi_container_site_pv"> 2018 </span> 
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
